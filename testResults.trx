@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="c42d587c-5ae8-4bcb-855b-2af007ed86be" name="chenyu@CY 2024-07-05 11:24:01" runUser="CY\chenyu" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2024-07-05T11:24:01.1960649+08:00" queuing="2024-07-05T11:24:01.1960650+08:00" start="2024-07-05T11:24:00.4781941+08:00" finish="2024-07-05T11:24:01.2014925+08:00" />
+  <TestSettings name="default" id="0227bb21-34e2-45cc-a73e-558970cef57a">
+    <Deployment runDeploymentRoot="chenyu_CY_2024-07-05_11_24_01" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="4a21fff4-d668-417b-90aa-7b99c8d94149" testId="8e69626d-6cd9-899a-6218-ccf185a63cdc" testName="jenkinsxUnit.UnitTest1.Test1" computerName="CY" duration="00:00:00.0004589" startTime="2024-07-05T11:24:01.1230907+08:00" endTime="2024-07-05T11:24:01.1230909+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4a21fff4-d668-417b-90aa-7b99c8d94149" />
+    <UnitTestResult executionId="e85f162f-6fd9-40b4-8f89-4b07fc0d59ef" testId="5c0e4767-517a-7d93-4fbc-ccd32be897f3" testName="jenkinsxUnit.UnitTest1.Test2" computerName="CY" duration="00:00:00.0019517" startTime="2024-07-05T11:24:01.1205197+08:00" endTime="2024-07-05T11:24:01.1205315+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e85f162f-6fd9-40b4-8f89-4b07fc0d59ef">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.True() Failure&#xD;
+Expected: True&#xD;
+Actual:   False</Message>
+          <StackTrace>   at jenkinsxUnit.UnitTest1.Test2() in D:\app\allTest\jenkinsxUnit\jenkinsxUnit\UnitTest1.cs:line 14</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="jenkinsxUnit.UnitTest1.Test1" storage="d:\app\alltest\jenkinsxunit\jenkinsxunit\bin\debug\net6.0\jenkinsxunit.dll" id="8e69626d-6cd9-899a-6218-ccf185a63cdc">
+      <Execution id="4a21fff4-d668-417b-90aa-7b99c8d94149" />
+      <TestMethod codeBase="D:\app\allTest\jenkinsxUnit\jenkinsxUnit\bin\Debug\net6.0\jenkinsxUnit.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="jenkinsxUnit.UnitTest1" name="Test1" />
+    </UnitTest>
+    <UnitTest name="jenkinsxUnit.UnitTest1.Test2" storage="d:\app\alltest\jenkinsxunit\jenkinsxunit\bin\debug\net6.0\jenkinsxunit.dll" id="5c0e4767-517a-7d93-4fbc-ccd32be897f3">
+      <Execution id="e85f162f-6fd9-40b4-8f89-4b07fc0d59ef" />
+      <TestMethod codeBase="D:\app\allTest\jenkinsxUnit\jenkinsxUnit\bin\Debug\net6.0\jenkinsxUnit.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="jenkinsxUnit.UnitTest1" name="Test2" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="8e69626d-6cd9-899a-6218-ccf185a63cdc" executionId="4a21fff4-d668-417b-90aa-7b99c8d94149" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5c0e4767-517a-7d93-4fbc-ccd32be897f3" executionId="e85f162f-6fd9-40b4-8f89-4b07fc0d59ef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="1" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.5+1caef2f33e (64-bit .NET 6.0.30)&#xD;
+[xUnit.net 00:00:00.25]   Discovering: jenkinsxUnit&#xD;
+[xUnit.net 00:00:00.27]   Discovered:  jenkinsxUnit&#xD;
+[xUnit.net 00:00:00.27]   Starting:    jenkinsxUnit&#xD;
+[xUnit.net 00:00:00.31]       Assert.True() Failure&#xD;
+[xUnit.net 00:00:00.31]       Expected: True&#xD;
+[xUnit.net 00:00:00.31]       Actual:   False&#xD;
+[xUnit.net 00:00:00.32]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.32]         D:\app\allTest\jenkinsxUnit\jenkinsxUnit\UnitTest1.cs(14,0): at jenkinsxUnit.UnitTest1.Test2()&#xD;
+[xUnit.net 00:00:00.32]   Finished:    jenkinsxUnit&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="CY" outcome="Error" timestamp="2024-07-05T11:24:01.1176014+08:00">
+        <Text>[xUnit.net 00:00:00.31]     jenkinsxUnit.UnitTest1.Test2 [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>
